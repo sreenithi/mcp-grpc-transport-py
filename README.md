@@ -1,2 +1,3 @@
 ## Description
-This repo contains pluggable gRPC Transport support for MCP Python
+This repo is currently work in progress and will soon contain pluggable gRPC
+Transport support for MCP Python.
