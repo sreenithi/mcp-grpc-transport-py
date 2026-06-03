@@ -22,8 +22,22 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "grpcio>=1.74.0",
+    "mcp==1.27.2",
+    "protobuf>=6.33.5,<8.0.0",
+    "pydantic>=2.11.0,<3.0.0",
+    "mcp-grpc-transport-proto==0.1.0",
 ]
 
 [project.urls]
 "Homepage" = "https://github.com/GoogleCloudPlatform/mcp-grpc-transport-py"
 "Bug Tracker" = "https://github.com/GoogleCloudPlatform/mcp-grpc-transport-py/issues"
+
+[dependency-groups]
+dev = [
+    "pytest-asyncio>=1.4.0", # TODO: Remove once all tests are rewritten using absltest.parameterize
+    "absl-py>=2.2.0",
+]
